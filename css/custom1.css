@@ -1,5 +1,4 @@
 /* Hide default library card menu */
-// Hide default library card menu
 prm-library-card-menu > button {
   display: none !important;
 }
