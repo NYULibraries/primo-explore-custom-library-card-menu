@@ -1,0 +1,22 @@
+{
+  "name": "primo-explore-custom-library-card-menu",
+  "version": "1.0.0",
+  "description": "Create a custom library card menu in place of the default options",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyulibraries/primo-explore-custom-library-card-menu.git"
+  },
+  "keywords": [
+    "primo-explore"
+  ],
+  "author": "Barnaby Alter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nyulibraries/primo-explore-custom-library-card-menu/issues"
+  },
+  "homepage": "https://github.com/nyulibraries/primo-explore-custom-library-card-menu#readme"
+}
