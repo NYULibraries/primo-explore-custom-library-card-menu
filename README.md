@@ -27,7 +27,7 @@ npm install primo-explore-custom-library-card-menu --save-dev
 
 ## Usage
 
-Once intalled, inject `customLibraryCardMenu` as a dependency:
+Once installed, inject `customLibraryCardMenu` as a dependency:
 
 ```
 let app = angular.module('viewCustom', ['customLibraryCardMenu'])
