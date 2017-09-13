@@ -13,29 +13,29 @@ Override the default options in the library card menu for the primo-explore UI.
 1. Assuming you've installed and are using [primo-explore-devenv](https://github.com/ExLibrisGroup/primo-explore-devenv).
 
 2. Navigate to your template/central package root directory. For example:
-  ```
-  cd primo-explore/custom/MY_VIEW_ID
-  ```
+    ```
+    cd primo-explore/custom/MY_VIEW_ID
+    ```
 3. If you do not already have a package.json file in this directory, create one:
-  ```
-  npm init -y
-  ```
+    ```
+    npm init -y
+    ```
 4. Install this package:
-  ```
-  npm install primo-explore-custom-library-card-menu --save-dev
-  ```
+    ```
+    npm install primo-explore-custom-library-card-menu --save-dev
+    ```
 
 ## Usage
 
 Once installed, inject `customLibraryCardMenu` as a dependency:
 
-```
+```js
 let app = angular.module('viewCustom', ['customLibraryCardMenu'])
 ```
 
 **Note:** If you're using the --browserify build option, you will need to first import the module with:
 
-```
+```js
 import 'primo-explore-custom-library-card-menu';
 ```
 
@@ -54,7 +54,7 @@ You can use translations to access back office text by wrapping the value in cur
 
 ### Example
 
-```
+```js
 app.constant('customLibraryCardMenuItems',
   [
     {
