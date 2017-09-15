@@ -2,7 +2,7 @@
 
 ## Description
 
-Override the default options in the library card menu for the primo-explore UI.
+Append buttons to the library card menu for the primo-explore UI.
 
 ### Screenshot
 
@@ -86,6 +86,16 @@ app.constant('customLibraryCardMenuItems',
     }
   ]
 )
+```
+
+## Styles
+
+To completely hide the default options use the following CSS:
+
+```css
+prm-library-card-menu > button {
+  display: none !important;
+}
 ```
 
 ## Acknowledgements
