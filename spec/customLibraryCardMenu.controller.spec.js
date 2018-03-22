@@ -3,7 +3,7 @@ const customLibraryCardMenuItems = __fixtures__['customLibraryCardMenuItems'];
 describe('searchBarSubMenuController', () => {
 
   let $componentController, $scope, $filter;
-  let controller, scopeAssignments;
+  let controller;
 
   beforeEach(module('customLibraryCardMenu', ($provide) => {
     $provide.constant("customLibraryCardMenuItems", customLibraryCardMenuItems);
@@ -17,10 +17,6 @@ describe('searchBarSubMenuController', () => {
 
     controller = $componentController('prmLibraryCardMenuAfter', { $scope });
 
-    controller.$onInit();
-    scopeAssignments = Object.keys($scope)
-                        .filter(k => k[0] !== '$')
-                        .map(k => $scope[k]);
   }));
 
   beforeEach(() => {
@@ -29,6 +25,11 @@ describe('searchBarSubMenuController', () => {
 
   describe('$onInit', () => {
     it('should set items array in scope', () => {
+      controller.$onInit();
+      const scopeAssignments = Object.keys($scope)
+                                .filter(k => k[0] !== '$')
+                                .map(k => $scope[k]);
+
       expect(scopeAssignments).toContain(customLibraryCardMenuItems);
     });
   });
