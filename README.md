@@ -1,5 +1,8 @@
 # primo-explore-custom-library-card-menu
 
+[![Build Status](https://travis-ci.org/NYULibraries/primo-explore-custom-library-card-menu.svg?branch=master)](https://travis-ci.org/NYULibraries/primo-explore-custom-library-card-menu)
+[![npm version](https://img.shields.io/npm/v/primo-explore-custom-library-card-menu.svg)](https://www.npmjs.com/package/primo-explore-custom-library-card-menu)
+
 ## Description
 
 Append buttons to the library card menu for the primo-explore UI.
