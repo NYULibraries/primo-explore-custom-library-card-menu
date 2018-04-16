@@ -1,1 +1,5 @@
 coverage/
+spec/
+.babelrc
+.travis.yml
+karma.conf.js
