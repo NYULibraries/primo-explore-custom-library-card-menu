@@ -2,7 +2,7 @@
   "name": "primo-explore-custom-library-card-menu",
   "version": "1.1.4",
   "description": "ExLibris Primo New UI plugin for creating a custom library card menu in place of the default options",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "karma start --single-run",
     "test:chrome-debugger": "karma start --browsers=Chrome --single-run=false --debug",
