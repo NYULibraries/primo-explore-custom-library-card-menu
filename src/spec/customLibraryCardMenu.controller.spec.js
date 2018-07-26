@@ -2,7 +2,7 @@ const customLibraryCardMenuItems = __fixtures__['customLibraryCardMenuItems'];
 
 describe('searchBarSubMenuController', () => {
 
-  let $componentController, $scope, $filter;
+  let $componentController, $scope;
   let controller;
 
   beforeEach(module('customLibraryCardMenu', ($provide) => {
@@ -10,10 +10,9 @@ describe('searchBarSubMenuController', () => {
     $provide.value("translateFilter", (original) => original + "!");
   }));
 
-  beforeEach(inject(function(_$rootScope_, _$componentController_, _$filter_) {
+  beforeEach(inject(function(_$rootScope_, _$componentController_) {
     $scope = _$rootScope_;
     $componentController = _$componentController_;
-    $filter = _$filter_;
 
     controller = $componentController('prmLibraryCardMenuAfter', { $scope });
 
@@ -40,6 +39,9 @@ describe('searchBarSubMenuController', () => {
     });
     it('should translate text within curly braces', () => {
       expect($scope.translate('My {CONFIG_VALUE} value')).toEqual("My CONFIG_VALUE! value");
+    });
+    it('should translate multiple curly braces', () => {
+      expect($scope.translate('My {CONFIG_VALUE} value {CONFIG_VALUE}')).toEqual("My CONFIG_VALUE! value CONFIG_VALUE!");
     });
   });
 
