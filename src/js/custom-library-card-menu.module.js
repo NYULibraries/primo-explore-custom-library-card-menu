@@ -5,7 +5,7 @@ angular
       $scope.customLibraryCardMenuItems = customLibraryCardMenuItems;
     }
     $scope.translate = (original) => {
-      return original.replace(/\{(.+)\}/g, (match, p1) => $filter('translate')(p1));
+      return original.replace(/\{(.+?)\}/g, (match, p1) => $filter('translate')(p1));
     }
     $scope.goToUrl = (url) => {
       window.open(url, '_blank');
