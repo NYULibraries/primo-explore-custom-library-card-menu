@@ -1,4 +1,4 @@
-const customLibraryCardMenuItems = __fixtures__['customLibraryCardMenuItems'];
+import customLibraryCardMenuItems from './fixtures/customLibraryCardMenuItems';
 
 describe('customLibraryCardMenu component', () => {
   beforeEach(module('customLibraryCardMenu', ($provide) => {

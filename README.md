@@ -1,6 +1,6 @@
 # primo-explore-custom-library-card-menu
 
-[![Build Status](https://travis-ci.org/NYULibraries/primo-explore-custom-library-card-menu.svg?branch=master)](https://travis-ci.org/NYULibraries/primo-explore-custom-library-card-menu)
+[![CircleCI](https://circleci.com/gh/NYULibraries/primo-explore-custom-library-card-menu.svg?style=svg)](https://circleci.com/gh/NYULibraries/primo-explore-custom-library-card-menu)
 [![npm version](https://img.shields.io/npm/v/primo-explore-custom-library-card-menu.svg)](https://www.npmjs.com/package/primo-explore-custom-library-card-menu)
 [![Coverage Status](https://coveralls.io/repos/github/NYULibraries/primo-explore-custom-library-card-menu/badge.svg?branch=master)](https://coveralls.io/github/NYULibraries/primo-explore-custom-library-card-menu?branch=master)
 
