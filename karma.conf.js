@@ -7,7 +7,7 @@ module.exports = function (config) {
     reporters: [
       'spec',
       'junit',
-      'coverage',
+      'coverage-istanbul',
       'coveralls',
     ],
     browsers: ['ChromeHeadless', 'ChromiumHeadless_without_sandbox'],
@@ -50,9 +50,11 @@ module.exports = function (config) {
     junitReporter: {
       outputDir: 'test-results'
     },
-    coverageReporter: {
-      type: 'lcov', // lcov or lcovonly are required for generating lcov.info files
-      dir: 'test-results/coverage',
+    coverageIstanbulReporter: {
+      reports: [
+        'lcov',
+      ],
+      dir: 'test-results/coverage'
     },
   });
 };
