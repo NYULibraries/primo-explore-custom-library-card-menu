@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const webpackConfig = require('./webpack.config');
 process.env.CHROME_BIN = require('puppeteer').executablePath();
 
 module.exports = function (config) {
@@ -25,11 +26,7 @@ module.exports = function (config) {
     webpack: {
       mode: 'development',
       module: {
-        rules: [{
-          test: /\.js$/,
-          exclude: /node_modules/,
-          loader: 'babel-loader',
-        }]
+        rules: webpackConfig.module.rules,
       },
       devtool: 'inline-source-map',
       externals: {
