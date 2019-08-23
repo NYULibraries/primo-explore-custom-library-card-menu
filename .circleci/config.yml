@@ -16,7 +16,8 @@ jobs:
           docker-compose run test
           docker cp "$(docker ps -q -a -l -f name=test)":/app/test-results ./test-results
     - store_test_results:
-        build-and-pack:
+        path: test-results
+  build-and-pack:
     <<: *docker-defaults
     steps:
     - checkout
