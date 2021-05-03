@@ -44,5 +44,8 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
   },
+  "resolutions":{
+    "ssri": "^6.0.2"
+  },
   "homepage": "https://github.com/nyulibraries/primo-explore-custom-library-card-menu#readme"
 }
