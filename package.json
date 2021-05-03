@@ -47,7 +47,8 @@
   "resolutions":{
     "ssri": "^6.0.2",
     "y18n": "^4.0.1",
-    "elliptic": "^6.5.4"
+    "elliptic": "^6.5.4",
+    "serialize-javascript": "^3.1.0"
   },
   "homepage": "https://github.com/nyulibraries/primo-explore-custom-library-card-menu#readme"
 }
